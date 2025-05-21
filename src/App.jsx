@@ -1,8 +1,9 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header/Header'
-import TimetableForm from './components/TimetableForm'
-import TimetableResult from './components/TimetableResult/TimetableResult'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Header/Header";
+import TimetableResult from "./TimetableResult/TimetableResult";
+import TimetableForm from "./TimetableFrom/TimetableForm";
+import ContactPage from "./ContactPage/ContactPage"; // 문의하기 추가
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
         <Routes>
           <Route path="/" element={<TimetableForm />} />
           <Route path="/result" element={<TimetableResult />} />
+          <Route path="/contact" element={<ContactPage />} /> {/* 문의하기 추가 */}
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
