@@ -58,7 +58,7 @@ const Header = () => {
           
           <nav className="desktop-nav">
             <button className="nav-button">설명</button>
-            <button className="nav-button">문의하기</button>
+            <Link to="/contact" className="nav-button">문의하기</Link>
           </nav>
         </div>
 
@@ -81,7 +81,7 @@ const Header = () => {
               <nav className="mobile-nav">
                 <div className="mobile-nav-buttons">
                   <button className="mobile-nav-button">설명</button>
-                  <button className="mobile-nav-button">문의하기</button>
+                  <Link to="/contact" className="mobile-nav-button" onClick={toggleMenu}>문의하기</Link>
                 </div>
               </nav>
             </div>
